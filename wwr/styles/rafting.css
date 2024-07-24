@@ -1,131 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
-@font-face {
-  font-family: 'Anton SC';
-  src: url('fonts/AntonSC-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('fonts/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal; 
-}
-
-:root {
-  --primary-color: #0B4F6C;
-  --secondary-color: #01BAEF;
-  --accent1-color: #FBFBFF;
-  --accent2-color: #040F16;
-
-  --heading-font: "Anton SC", sans-serif;
-  --paragraph-font: "Roboto", sans-serif;
-  --nav-background-color: #0B4F6C;
-  --nav-link-color: #01BAEF;
-  --nav-hover-link-color: #FBFBFF;
-  --nav-hover-background-color: #040F16;
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: var(--paragraph-font, 'Roboto', sans-serif);
-  max-width: 960px;
-  padding: 20px;
-}
-
-h1, h2 {
-  font-family: var(--heading-font, 'Anton SC', sans-serif);
-  color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4ff; 
+  color: #0253a3; 
 }
 
 header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--accent1-color);
+  background-color: #0253a3; 
+  color: #f3f4ff; 
+  text-align: center;
+  padding: 1rem 0;
 }
 
-.logo {
-  justify-self: start;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header img {
+  width: 100px; 
+  height: auto;
+  margin-top: 10px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--nav-background-color);
-  padding: 10px;
+  margin-top: 20px;
 }
 
 nav a {
-  color: var(--nav-link-color);
+  color: #f3f4ff;
   text-decoration: none;
-  padding: 10px;
-  transition: color 0.3s ease-in-out;
+  padding: 0 10px;
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-section img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  margin: 0 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f3f4ff; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  background-color: rgba(11, 79, 108, 1);
-  padding: 10px 20px;
-  color: #FFFFFF;
+.section-header h2 {
+  color: #0253a3; 
+  font-size: 2rem;
+  border-bottom: 2px solid #0253a3; 
+  padding-bottom: 10px;
 }
 
-footer img {
-  position: relative;
-  bottom: 0px;
-  width: 65px;
-  height: auto;
-  margin: 0 10px;
+.subsection {
+  margin-bottom: 20px;
+}
+
+.subsection h3 {
+  color: #0253a3; 
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
+  background-color: #0253a3; 
+  color: #f3f4ff; 
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-figure {
-  margin: 20px 0;
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
 }
 
-figure img {
-  display: block;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 figcaption {
@@ -135,7 +112,19 @@ figcaption {
   margin-top: 10px;
 }
 
-.contact-image img {
-    width: 80px;
-    height: auto; 
+.sociallinks a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--nav-hover-link-color);
+  transition: transform 0.3s ease;
+}
+
+.sociallinks a:hover {
+  transform: scale(1.1);
+}
+
+.sociallinks img {
+  width: 20px; 
+  height: auto;
+  border-radius: 50%;
 }
