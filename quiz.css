@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif, sans-serif;
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -16,7 +16,10 @@ form {
 h1, h2 {
     text-align: center;
     color: #333333;
-    margin-bottom: 20px; 
+}
+
+.question {
+    margin-bottom: 20px;
 }
 
 label {
@@ -29,13 +32,12 @@ input[type="text"],
 textarea,
 select,
 input[type="number"] {
-    width: calc(100% - 22px); 
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 10px; 
 }
 
 textarea {
