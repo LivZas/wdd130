@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic HTML and CSS Quiz</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    h1, h2 {
+        text-align: center;
+        color: #333333;
+    }
+    .question {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    textarea,
+    select,
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea {
+        resize: vertical;
+    }
+    .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<h1>Basic HTML and CSS Quiz</h1>
+
+<form action="quiz-results.php" method="post">
+    <h2>Quiz Questions</h2>
+
+    <div class="question">
+        <label for="q1">1. What does the acronym CSS stand for?</label>
+        <input type="text" id="q1" name="q1" required>
+    </div>
+
+    <div class="question">
+        <label for="q2">2. How are id and class attributes selected in CSS?</label>
+        <textarea id="q2" name="q2" rows="4" required></textarea>
+    </div>
+
+    <div class="question">
+        <label for="q3">3. Which of the following is a valid CSS comment?</label>
+        <select id="q3" name="q3" required>
+            <option value="" selected disabled>Choose One ...</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <label for="q4">4. What is the bottom margin given in this declaration?</label>
+        <img src="images/margin.png" class="center-image">
+        <input type="number" id="q4" name="q4" min="1" required>
+        
+    </div>
+<button type="submit" class="submit-btn">Submit Quiz</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@font-face {
+    font-family: 'Anton SC';
+    src: url('fonts/AntonSC-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal; 
+  }
+  
+
+:root {
+    --primary-color: #0B4F6C;
+    --secondary-color: #01BAEF;
+    --accent1-color: #FBFBFF;
+    --accent2-color: #040F16;
+
+    --heading-font: "Anton SC", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --nav-background-color:#0B4F6C;
+    --nav-link-color: #01BAEF;
+    --nav-hover-link-color:#FBFBFF;
+    --nav-hover-background-color:#040F16;
+      }
+      
+
+body {
+    font-family: var(--paragraph-font, 'Roboto', sans-serif);
+    max-width: 960px;
+    padding: 20px;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font, 'Anton SC', sans-serif);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+background-color: var(--nav-background-color);
+font-size: 1.2rem;
+display: flex;
+}
+
+nav a {
+display: block;
+color: var(--nav-link-color);
+text-decoration: none;
+padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+color: var(--nav-link-color);
+}
+
+nav a:hover {
+color: var(--nav-hover-link-color);
+background-color: var(--nav-hover-background-color);
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@font-face {
+  font-family: 'Anton SC';
+  src: url('fonts/AntonSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal; 
+}
+
+:root {
+  --primary-color: #0B4F6C;
+  --secondary-color: #01BAEF;
+  --accent1-color: #FBFBFF;
+  --accent2-color: #040F16;
+
+  --heading-font: "Anton SC", sans-serif;
+  --paragraph-font: "Roboto", sans-serif;
+  --nav-background-color: #0B4F6C;
+  --nav-link-color: #01BAEF;
+  --nav-hover-link-color: #FBFBFF;
+  --nav-hover-background-color: #040F16;
+}
+
+body {
+  font-family: var(--paragraph-font, 'Roboto', sans-serif);
+  max-width: 960px;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: var(--heading-font, 'Anton SC', sans-serif);
+  color: var(--primary-color);
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+.logo {
+  justify-self: start;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 10px;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+section img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  background-color: rgba(11, 79, 108, 1);
+  padding: 10px 20px;
+  color: #FFFFFF;
+}
+
+footer img {
+  position: relative;
+  bottom: 0px;
+  width: 65px;
+  height: auto;
+  margin: 0 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.contact-image img {
+    width: 80px;
+    height: auto; 
+}
